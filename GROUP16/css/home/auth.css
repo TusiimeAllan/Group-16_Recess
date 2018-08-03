@@ -1,0 +1,267 @@
+html {
+    height: 100%
+}
+
+body {
+    /*background-image: url('/assets/images/auth/background_panda.jpg');*/
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    font-family: "Open Sans", sans-serif;
+    height:100%;
+    min-height:100%;
+}
+a a:link a:visited a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.row {
+    max-width: 810px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+.logo {
+    width: 100%;
+}
+
+.logo-box {
+    /* padding-top: 30px; */
+    padding-bottom: 30px;
+    color: #999999;
+    font-weight: 300;
+    font-size: 13px;
+    /* text-align: center; */
+    width: 100%;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 135px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.logo-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    width: 35px;
+    height: 25px;
+    border-left: 1px solid #dbdbdb;
+    margin: 2px 0 2px 12px;
+    top: 0;
+    padding: 5px 0 0 15px;
+}
+
+.logo-icon .home-home {
+    width: 15px;
+    display: block;
+}
+
+.logo-icon .arrow-arrow {
+    width: 15px;
+    display: none;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.1);
+    height: 540px;
+    position: relative;
+    opacity: 1;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 25px 0 0 0;
+}
+
+.form-title {
+    font-size: 17px;
+    color: #999999;
+    padding-top: 40px;
+    padding-bottom: 38px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form-core {
+    max-width: 400px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.box-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-field {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Поле ввода */
+.form-field-input {
+    padding: 0 15px;
+    background: none;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    height: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+/* Заголовок поля ввода */
+.form-field-label {
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    height: 100%;
+    left: -15px;
+    position: absolute;
+    top: 15px;
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+    font-weight: lighter;
+}
+
+.form-field-restore {
+    box-sizing: border-box;
+    color: #999999;
+    cursor: pointer;
+    font-size: 12px;
+    height: 100%;
+    padding-right: 15px;
+    padding-top: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all 0s ease;
+    z-index: 3;
+}
+
+.form-field-restore:hover span {
+    background-color: #ffa832;
+    color: #fff;
+    border-radius: 4px;
+}
+.form-field-restore span {
+    padding: 2px 10px;
+    transition: all 0.3s ease;
+}
+
+.form-button {
+    transition: all 0.1s;
+    position: relative;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #FFF;
+    border: none;
+    width: 100%;
+    display: inline-block;
+}
+.form-button-purple {
+    background-color: #893e90;
+    border-bottom: 3px solid #723478;
+    height: 47px;
+    line-height: 44px;
+}
+
+.form-footer {
+    background-color: #fdf4e3;
+    border-radius: 0 0 4px 4px;
+    border-top: 1px solid #e8e8e8;
+    bottom: 0;
+    box-sizing: border-box;
+    display: block;
+    font-size: 17px;
+    left: 0;
+    margin-top: 30px;
+    padding: 18px 30px 19px 30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.form-footer:hover {
+    background-color: #fdeed2;
+}
+
+.form-footer-text {
+    color: #666666;
+}
+
+.footer {
+    font-weight: 300;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    font-size: 13px;
+    text-align: center;
+    color: #999999;
+}
+
+.form-field-view_pass {
+    position: absolute;
+    height: 100%;
+    padding-right: 15px;
+    padding-top: 15px;
+    top: 0;
+    right: 0;
+    box-sizing: border-box;
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* Ошибка при валидации */
+
+.form-field-error {
+    position: absolute;
+    height: auto;
+    min-height: 50px;
+    width: 180px;
+    box-sizing: border-box;
+    right: -190px;
+    background-color: #eb8686;
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.33;
+    padding: 10px 15px;
+    border-radius: 4px;
+    top: 0;
+    /* animation: error_hint 0.5s forwards; */
+}
+
+.form-field-error::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 5.5px 5px 5.5px 0;
+    border-color: transparent #eb8686 transparent transparent;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.help-block {
+    display: none;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
